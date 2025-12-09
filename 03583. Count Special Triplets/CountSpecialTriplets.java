@@ -3,8 +3,7 @@ class Solution {
         int n = nums.length;
         long MOD = 1_000_000_007;
 
-        Map<Integer, Long> right = new HashMap<>();
-        Map<Integer, Long> left = new HashMap<>();
+        Map<Integer, Long> right = new HashMap<>(), left = new HashMap<>();
 
         for(int x : nums){
             right.put(x, right.getOrDefault(x, 0L) + 1);
